@@ -21,9 +21,20 @@ Download science fiction collections from the [Internet Archive](https://archive
 
 Query the [NYT Books API](https://developer.nytimes.com/docs/books-product/1/overview) for bestseller list data. Requires an API key (stored in a local `config.py`, not tracked).
 
-## Requirements
+## Setup
 
-- Python 3.7+
-- See `requirements_ia.txt` for Internet Archive dependencies
-- Notebooks use standard libraries: `requests`, `pandas`, `SPARQLWrapper`, `beautifulsoup4`
-- The Star Trek API notebook requires R and `rpy2`
+Requires Python 3.9+. Install dependencies with [uv](https://docs.astral.sh/uv/):
+
+```bash
+uv sync
+```
+
+Or with pip:
+
+```bash
+pip install -e .
+```
+
+The Star Trek API notebook (`StarTrek/Star_Trek_API.ipynb`) additionally requires R and `rpy2`.
+
+The NYT Books notebook requires a local `config.py` with your API key (not tracked in git).

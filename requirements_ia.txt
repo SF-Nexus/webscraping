@@ -1,2 +1,0 @@
-# Internet Archive Python library for downloading datasets
-internetarchive>=4.0.0
